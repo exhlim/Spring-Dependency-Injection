@@ -1,9 +1,7 @@
 package com.exhlim.springdependencyinjection;
 
-import com.exhlim.springdependencyinjection.controllers.ConstructorInjectedController;
-import com.exhlim.springdependencyinjection.controllers.MyController;
-import com.exhlim.springdependencyinjection.controllers.PropertyInjectedController;
-import com.exhlim.springdependencyinjection.controllers.SetterInjectedController;
+import com.exhlim.springdependencyinjection.controllers.*;
+import com.exhlim.springdependencyinjection.services.PrimaryGreetingService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -14,7 +12,9 @@ public class SpringDependencyInjectionApplication {
 	public static void main(String[] args) {
 		/** This line returns back an application context **/
 		ApplicationContext ctx = SpringApplication.run(SpringDependencyInjectionApplication.class, args);
-
+		Testing asd = (Testing) ctx.getBean("testing");
+    System.out.println(asd.getGreeting());
+    System.out.print("------ Primary Bean ---->  ");
 		/** From that context, get an instance of this bean (myController)
 		 * Casting is required cause ctx will return an object type
 		 * By Default spring creates bean with the naming convention starting with lower case

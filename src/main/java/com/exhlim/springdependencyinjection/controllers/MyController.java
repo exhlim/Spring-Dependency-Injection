@@ -1,12 +1,19 @@
 package com.exhlim.springdependencyinjection.controllers;
 
 
+import com.exhlim.springdependencyinjection.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class MyController {
+
+	private final GreetingService greetingService;
+
+	public MyController(GreetingService greetingService) {
+		this.greetingService = greetingService;
+	}
+
 	public String sayHello() {
-    System.out.println("Hello world");
-    return "Hi people";
+		return greetingService.sayGreeting();
 	}
 }
