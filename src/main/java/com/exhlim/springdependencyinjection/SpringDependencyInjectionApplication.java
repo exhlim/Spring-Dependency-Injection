@@ -15,7 +15,7 @@ public class SpringDependencyInjectionApplication {
 		/** This line returns back an application context **/
 		ApplicationContext ctx = SpringApplication.run(SpringDependencyInjectionApplication.class, args);
 
-		/** From that context, get an instance of this bean (this controller)
+		/** From that context, get an instance of this bean (myController)
 		 * Casting is required cause ctx will return an object type
 		 * By Default spring creates bean with the naming convention starting with lower case
 		 *
@@ -24,9 +24,8 @@ public class SpringDependencyInjectionApplication {
 		MyController myController = (MyController) ctx.getBean("myController");
 
 		/** Here we are asking the context for the controller and calling its method **/
-		String greeting = myController.sayHello();
 
-    System.out.println(greeting);
+    System.out.println(myController.sayHello());
 
     System.out.print("------ Property based controller ---->  ");
 

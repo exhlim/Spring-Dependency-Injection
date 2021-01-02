@@ -1,11 +1,8 @@
 package com.exhlim.springdependencyinjection.controllers;
 
-import com.exhlim.springdependencyinjection.services.GreetingServiceImpl;
+import com.exhlim.springdependencyinjection.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.stereotype.Service;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class SetterInjectedControllerTest {
 	SetterInjectedController controller;
@@ -14,7 +11,7 @@ class SetterInjectedControllerTest {
   void setUp() {
   	controller = new SetterInjectedController();
   	/** Using setter to inject the service implementation **/
-  	controller.setGreetingService(new GreetingServiceImpl());
+  	controller.setGreetingService(new ConstructorGreetingService());
 
 	}
 
