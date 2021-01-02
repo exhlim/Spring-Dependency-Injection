@@ -12,6 +12,11 @@ public class SpringDependencyInjectionApplication {
 	public static void main(String[] args) {
 		/** This line returns back an application context **/
 		ApplicationContext ctx = SpringApplication.run(SpringDependencyInjectionApplication.class, args);
+
+		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+
+    System.out.println("Changing Profiles ------> " + i18nController.sayHello());
+
 		Testing asd = (Testing) ctx.getBean("testing");
     System.out.println(asd.getGreeting());
     System.out.print("------ Primary Bean ---->  ");
