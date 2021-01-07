@@ -1,6 +1,6 @@
 package com.exhlim.springdependencyinjection.controllers;
 
-import com.exhlim.springdependencyinjection.services.ConstructorGreetingService;
+import com.exhlim.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,7 +1,7 @@
 package com.exhlim.springdependencyinjection.controllers;
 
 
-import com.exhlim.springdependencyinjection.services.GreetingService;
+import com.exhlim.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 @Controller

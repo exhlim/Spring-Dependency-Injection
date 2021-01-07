@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Spring-Dependency-Injection" target="11" />
+      <module name="Spring-Dependency-Injection" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

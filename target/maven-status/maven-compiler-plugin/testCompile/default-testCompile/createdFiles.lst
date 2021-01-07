@@ -1,1 +1,4 @@
+com/exhlim/springdependencyinjection/controllers/PropertyInjectedControllerTest.class
+com/exhlim/springdependencyinjection/controllers/SetterInjectedControllerTest.class
+com/exhlim/springdependencyinjection/controllers/ConstructorInjectedControllerTest.class
 com/exhlim/springdependencyinjection/SpringDependencyInjectionApplicationTests.class

@@ -1,1 +1,4 @@
-/Users/eugenelim/Desktop/spring/Spring-Dependency-Injection/src/test/java/com/exhlim/springdependencyinjection/SpringDependencyInjectionApplicationTests.java
+/Users/euglim/Desktop/spring/Spring-Dependency-Injection/src/test/java/com/exhlim/springdependencyinjection/SpringDependencyInjectionApplicationTests.java
+/Users/euglim/Desktop/spring/Spring-Dependency-Injection/src/test/java/com/exhlim/springdependencyinjection/controllers/SetterInjectedControllerTest.java
+/Users/euglim/Desktop/spring/Spring-Dependency-Injection/src/test/java/com/exhlim/springdependencyinjection/controllers/ConstructorInjectedControllerTest.java
+/Users/euglim/Desktop/spring/Spring-Dependency-Injection/src/test/java/com/exhlim/springdependencyinjection/controllers/PropertyInjectedControllerTest.java

@@ -1,7 +1,6 @@
 package com.exhlim.springdependencyinjection.controllers;
 
-import com.exhlim.springdependencyinjection.services.ConstructorGreetingService;
-import com.exhlim.springdependencyinjection.services.GreetingService;
+import com.exhlim.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;

@@ -1,12 +1,14 @@
 package com.exhlim.springdependencyinjection;
 
 import com.exhlim.springdependencyinjection.controllers.*;
-import com.exhlim.springdependencyinjection.services.PrimaryGreetingService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"com.exhlim", "com.exhlim.springdependencyinjection" })
 public class SpringDependencyInjectionApplication {
 
 	public static void main(String[] args) {
